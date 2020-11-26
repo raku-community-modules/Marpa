@@ -3,10 +3,10 @@
 	"name"        : "Marpa",
 	"license"     : "Artistic-2.0",
 	"version"     : "*",
-	"description" : "A Perl6 binding to libmarpa, the parser module",
+	"description" : "A Raku binding to libmarpa, the parser module",
 	"depends"     : [ ],
 	"provides"    : {
 		"Marpa"	: "lib/Marpa.pm"
 	},
-	"source-url"  : "git://github.com/drforr/perl6-Marpa.git"
+	"source-url"  : "git://github.com/raku/community-modukes/Marpa.git"
 }
