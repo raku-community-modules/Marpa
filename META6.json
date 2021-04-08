@@ -8,5 +8,5 @@
 	"provides"    : {
 		"Marpa"	: "lib/Marpa.pm"
 	},
-	"source-url"  : "git://github.com/raku/community-modukes/Marpa.git"
+	"source-url"  : "git://github.com/raku-community-modules/Marpa.git"
 }
