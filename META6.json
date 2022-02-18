@@ -1,12 +1,23 @@
 {
-	"perl"        : "6.*",
-	"name"        : "Marpa",
-	"license"     : "Artistic-2.0",
-	"version"     : "*",
-	"description" : "A Raku binding to libmarpa, the parser module",
-	"depends"     : [ ],
-	"provides"    : {
-		"Marpa"	: "lib/Marpa.pm"
-	},
-	"source-url"  : "git://github.com/raku-community-modules/Marpa.git"
+  "author": "Jeff Goff",
+  "build-depends": [
+  ],
+  "depends": [
+    "NativeCall"
+  ],
+  "description": "Raku interface to the libmarpa C library.",
+  "license": "Artistic-2.0",
+  "name": "Marpa",
+  "perl": "6.*",
+  "provides": {
+    "Marpa": "lib/Marpa.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "git://github.com/raku-community-modules/Marpa.git",
+  "tags": [ "PARSER", "GRAMMAR", "MARPA"
+  ],
+  "test-depends": [
+  ],
+  "version": "1.0"
 }
