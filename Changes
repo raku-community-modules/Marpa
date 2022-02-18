@@ -1,7 +1,6 @@
 Revision history for Marpa
 
 {{$NEXT}}
+
+1.0  2022-02-18T15:55:37+01:00
     - First version in the zef ecosystem
-    - Note that this is just the start of a framework, by the late
-      Jeff Goff, that will need a lot of TLC before it can actually
-      be useful and used.  Volunteers are very welcome!
