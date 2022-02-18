@@ -1,6 +1,44 @@
 use NativeCall;
 
-class Marpa:ver<1.0>:auth<zef:raku-community-modules> {
+=begin pod
+
+=head1 NAME
+
+Marpa - Raku interface to the libmarpa C library.
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+
+use Marpa;
+
+=end code
+
+=head1 DESCRIPTION
+
+Marpa is a Raku interface to the libmarpa C library.
+
+Marpa requires libmarpa to be present. I'd recommend installing from
+packages, or just look on the libmarpa website for install instructions.
+
+=head1 AUTHOR
+
+Jeffrey Goff, aka DrForr
+
+Source can be located at: https://github.com/raku-community-modules/Marpa .
+Comments and Pull Requests are welcome.
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2015 - 2018 Jeffrey Goff
+
+Copyright 2019 - 2022 Raku Community
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+=end pod
+
+class Marpa:ver<1.0.1>:auth<zef:raku-community-modules> {
   my constant LIB = 'libmarpa.so.8';
 
   my enum Marpa-Error-Code <
@@ -1865,43 +1903,5 @@ class Marpa:ver<1.0>:auth<zef:raku-community-modules> {
          returns Int {
            marpa_v_valued_force( $v ) }
 }
-
-=begin pod
-
-=head1 NAME
-
-Marpa - Raku interface to the libmarpa C library.
-
-=head1 SYNOPSIS
-
-=begin code :lang<raku>
-
-use Marpa;
-
-=end code
-
-=head1 DESCRIPTION
-
-Marpa is a Raku interface to the libmarpa C library.
-
-Marpa requires libmarpa to be present. I'd recommend installing from
-packages, or just look on the libmarpa website for install instructions.
-
-=head1 AUTHOR
-
-Jeffrey Goff, aka DrForr
-
-Source can be located at: https://github.com/raku-community-modules/Marpa .
-Comments and Pull Requests are welcome.
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright 2015 - 2018 Jeffrey Goff
-
-Copyright 2019 - 2022 Raku Community
-
-This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
-
-=end pod
 
 # vim: expandtab shiftwidth=4

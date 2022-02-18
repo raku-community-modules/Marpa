@@ -1,5 +1,40 @@
 [![Actions Status](https://github.com/raku-community-modules/Marpa/workflows/test/badge.svg)](https://github.com/raku-community-modules/Marpa/actions)
 
+NAME
+====
+
+Marpa - Raku interface to the libmarpa C library.
+
+SYNOPSIS
+========
+
+```raku
+use Marpa;
+```
+
+DESCRIPTION
+===========
+
+Marpa is a Raku interface to the libmarpa C library.
+
+Marpa requires libmarpa to be present. I'd recommend installing from packages, or just look on the libmarpa website for install instructions.
+
+AUTHOR
+======
+
+Jeffrey Goff, aka DrForr
+
+Source can be located at: https://github.com/raku-community-modules/Marpa . Comments and Pull Requests are welcome.
+
+COPYRIGHT AND LICENSE
+=====================
+
+Copyright 2015 - 2018 Jeffrey Goff
+
+Copyright 2019 - 2022 Raku Community
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
 ### sub marpa_check_version
 
 ```raku
@@ -1116,39 +1151,4 @@ sub marpa_v_valued_force(
 ```
 
 This methods locks the valued status of all symbols to 1, indicated that the symbol is valued. If this is not possible, for example because one of the grammar's symbols already is locked at a valued status of 0, failure is returned. Success value: A non-negative number. Failure value: −2, and sets the error code to an appropriate value, which will never be MARPA-ERR-NONE.
-
-NAME
-====
-
-Marpa - Raku interface to the libmarpa C library.
-
-SYNOPSIS
-========
-
-```raku
-use Marpa;
-```
-
-DESCRIPTION
-===========
-
-Marpa is a Raku interface to the libmarpa C library.
-
-Marpa requires libmarpa to be present. I'd recommend installing from packages, or just look on the libmarpa website for install instructions.
-
-AUTHOR
-======
-
-Jeffrey Goff, aka DrForr
-
-Source can be located at: https://github.com/raku-community-modules/Marpa . Comments and Pull Requests are welcome.
-
-COPYRIGHT AND LICENSE
-=====================
-
-Copyright 2015 - 2018 Jeffrey Goff
-
-Copyright 2019 - 2022 Raku Community
-
-This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

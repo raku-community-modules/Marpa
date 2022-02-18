@@ -2,5 +2,8 @@ Revision history for Marpa
 
 {{$NEXT}}
 
+1.0.1  2022-02-18T16:09:58+01:00
+    - Render documentation with the intro first
+
 1.0  2022-02-18T15:55:37+01:00
     - First version in the zef ecosystem
